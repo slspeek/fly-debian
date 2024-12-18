@@ -7,11 +7,13 @@
 \setlength{\parindent}{0pt} 
 \begin{document}
 \begin{tikzpicture}
-  \draw[step=1cm]  (0,0) -- (21,-29.6) -- (0,0);
-  \draw[step=1cm]  (10.5,0) -- (10.5,-29.64);
+  \draw  (10.5,0) -- (10.5,\paperheight) node[midway,left] {1};
+  \draw  (0, 8.3) -- ++ (6, 0) node[above] {2} -- ++(15,0);
+  \draw  (0, 16.6) -- ++ (6, 0) node[above] {3} -- ++(15,0);
 \end{tikzpicture} 
+\newpage
 \begin{tikzpicture}
-  \draw[step=1cm]  (0,0) -- (21,-29.6) -- (0,0);
-  \draw[step=1cm]  (10.5,0) -- (10.5,-29.64);
+  \draw  (0,0) -- (21,\paperheight) -- (0,0);
+  \draw  (10.5,0) -- (10.5,\paperheight);
 \end{tikzpicture} 
 \end{document} 
